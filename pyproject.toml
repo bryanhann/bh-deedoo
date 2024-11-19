@@ -1,5 +1,5 @@
 [project]
-version = "0.0.3" # bh.bump: this line must be first.
+version = "0.0.3-b0" # bh.bump: this line must be first.
 name = "bh-deedoo"
 description = "Deedoos are alarms to keep you on track."
 readme = "README.md"

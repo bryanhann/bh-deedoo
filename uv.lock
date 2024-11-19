@@ -17,7 +17,7 @@ wheels = [
 
 [[package]]
 name = "bh-deedoo"
-version = "0.0.3"
+version = "0.0.3b0"
 source = { editable = "." }
 dependencies = [
     { name = "bh-bump" },
