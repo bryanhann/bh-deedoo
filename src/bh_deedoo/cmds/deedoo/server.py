@@ -24,8 +24,16 @@ def gSLEEP():
     else:       return ALARM_SLEEP
 
 def run_server(debug=False):
+    SAY(f"The time is {phone4dt(datetime.datetime.now())}")
     debug_set(debug)
     Server().run()
+
+def phone4dt(dt):
+    hh = dt.strftime("%H")
+    mm = dt.strftime("%M")
+    if mm == '00': return f"{hh} hundred"
+    else:          return f"{hh} {mm}"
+
 
 class Now:
     def __init__(self):
@@ -61,8 +69,7 @@ class Now:
     def ding(s):
         if s.is_ding_time() and not s.stop in s.DINGS:
             s.DINGS.add(s.stop)
-            SAY(f"The time is {s.phone()}")
-
+            SAY(f"The time is {phone4dt(s.dt)}")
 
     def handle(self):
         DIE_IF_KILLED()
