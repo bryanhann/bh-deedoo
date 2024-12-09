@@ -28,11 +28,13 @@ def debug_note(x):
     if debug():
         sys.stdout.write(x)
         sys.stdout.flush()
+
 def debug_set(debug=True):
-    sys.bh_deedoo_debug = True
+    sys.bh_deedoo_debug = debug
+
 def debug():
     try:
         return sys.bh_deedoo_debug
-    except AttributeErorr:
+    except AttributeError:
         return False
 
