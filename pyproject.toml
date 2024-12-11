@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bh-bump==0.1.3rc1",
+    "bh-util>=0.2.0b0",
+    "schedule>=1.2.2",
 ]
 
 [project.scripts]
