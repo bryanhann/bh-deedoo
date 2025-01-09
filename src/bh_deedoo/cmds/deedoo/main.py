@@ -73,7 +73,6 @@ class Deedoo(Thread):
 
     def speak(self, text):
         if not self._debug:
-            print(f'saying {text}')
             say(text)
 
     def die(self, n):
