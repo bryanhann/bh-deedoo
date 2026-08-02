@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+$BH1
+bh0 bch lbin4repo $PWD
+cd prj
+uv sync

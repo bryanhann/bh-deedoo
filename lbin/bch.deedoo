@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+$BH1
+repo=$(dirname $(dirname $(0resolve ${BASH_SOURCE[0]})))
+$repo/prj/.venv/bin/bh-deedoo $*
