@@ -7,3 +7,5 @@ from .dt4now      import dt4now
 from .dt4stop     import dt4stop
 from .stop4fnow   import stop4fnow
 from .stop4hhmm   import stop4hhmm
+from .misc import FOR
+from .misc import REV

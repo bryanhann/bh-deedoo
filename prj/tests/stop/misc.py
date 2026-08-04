@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-from pathlib import Path
 
 def stoppersGen():
     def hash4hhmm(hhmm):
@@ -14,10 +13,6 @@ def stoppersGen():
             yield hhmm, hash4hhmm(hhmm)
 
 
-TEMP=Path.home()/'.tmp'
-TEMP.is_dir() or TEMP.mkdir()
-TEMP=TEMP/'deedoo2315'
-TEMP.is_dir() or TEMP.mkdir()
 
 FOR=dict( stoppersGen() )
 REV=dict( (v,k) for (k,v) in stoppersGen() )

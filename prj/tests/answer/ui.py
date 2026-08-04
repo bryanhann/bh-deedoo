@@ -1,24 +1,10 @@
 #!/usr/bin/env bash
-import os
 
-class BoundsError(Exception):
-    pass
+import answer as __AA
 
-def exec0stop(stop):
-    print( f"touched {stop}" )    
-    os.system('say touched')
-    cmd=f"bh deedoo answer {stop}"
-    os.system( cmd )
-
-
-def answer(stop:str, force=False):
-    from stop      import stop4fnow
-    from files     import create4stop
-    from constants import REV
-    if not stop in REV:
-        exit( "bad stop" )
-    if force or stop == stop4fnow():
-        create4stop(stop)
-    else:
-        raise BoundsError
-
+def answer(stop, force=False):
+    try:
+        __AA.answer(str(stop).lower(),  force)
+        __AA.exec0stop(stop)
+    except __AA.BoundsError:
+        exit( 'out of bounds' )

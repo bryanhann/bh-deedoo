@@ -1,4 +1,4 @@
-from testing import floor4now as fnow
+from timing import floor4now as fnow
 from fn import hhmm4dt 
 def hhmm4fnow(): 
     return hhmm4dt( fnow() )
@@ -6,8 +6,8 @@ def hhmm4fnow():
 ##########################################
 
 from freezegun import freeze_time
-from constants import FOR
-
+#from constants import FOR
+from .misc import FOR
 def _assert(hhmm):
     assert hhmm4fnow() == hhmm
 

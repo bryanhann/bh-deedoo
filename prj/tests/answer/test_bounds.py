@@ -3,10 +3,10 @@
 import pytest
 from freezegun import freeze_time
 
-from answer import _answer as ANSWER
+from answer import answer as ANSWER
 from answer import BoundsError as EXC
 import answer as RR
-from testing import now
+from timing import now
 
 from stop import stop4hhmm
 

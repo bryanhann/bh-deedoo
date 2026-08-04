@@ -1,5 +1,5 @@
-from constants import REV
-
+#from constants import REV
+from stop.misc import REV
 def hhmm4stop(stop):
     return REV[stop.lower()]
 

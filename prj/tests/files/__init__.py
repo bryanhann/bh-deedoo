@@ -1,4 +1,6 @@
-from constants import TEMP
+#from constants import TEMP
+
+from .temp import TEMP
 
 def _rm4pth(pth): 
     pth.exists() and pth.unlink()

@@ -1,5 +1,5 @@
-from constants import FOR
-
+#from constants import FOR
+from .misc import FOR
 def floor5hhmm(hhmm):
     """Reduce hhmm until it matches a deedoo
     """

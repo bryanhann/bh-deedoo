@@ -1,4 +1,4 @@
-from constants import FOR
+from .misc import FOR
 from .         import hhmm4fnow
 def stop4fnow(): 
     return FOR[ hhmm4fnow() ]

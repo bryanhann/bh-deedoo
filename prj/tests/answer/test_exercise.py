@@ -2,7 +2,7 @@
 
 from freezegun import freeze_time
 
-from answer import _answer
+from answer    import answer
 from files     import clear, list, stat4stop
 from stop      import stop4hhmm
 STOP=stop4hhmm('1700')
@@ -11,7 +11,7 @@ STOP=stop4hhmm('1700')
 def test_path4stop():
     clear()
     assert not stat4stop(STOP)
-    _answer(STOP)
+    answer(STOP)
     list()
     assert stat4stop(STOP)
     clear()

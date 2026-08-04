@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
-import fire
-import sys
-import pathlib
-sys.path.append( f"{pathlib.Path(__file__).parent}/tests" )
+import sys     as __S
+import pathlib as __P
+import fire    as __F
+
+__S.path.append( f"{__P.Path(__file__).parent}/tests" )
 
 
 from main import *
 
 if __name__ == "__main__":
-    fire.Fire()
+    __F.Fire()
 

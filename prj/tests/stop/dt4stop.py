@@ -1,5 +1,5 @@
 import datetime
-from testing import now as NOW
+from timing import now as NOW
 from fn import hhmm4stop
 from .hm4hhmm import hm4hhmm
 
