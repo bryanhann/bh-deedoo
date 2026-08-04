@@ -1,0 +1,8 @@
+def stoppers():
+    def dd(n): return str(n+100)[-2:]
+    acc={}
+    for hh in range(0,24):
+        for mm in range(0,60,15):
+            hhmm = dd(hh) + dd(mm)
+            acc[hhmm] = UU.hash4hhmm(hhmm)
+    return acc

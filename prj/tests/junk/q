@@ -1,0 +1,4 @@
+def hash4hhmm(hhmm):
+    a=hashlib.md5()
+    a.update(hhmm.encode())
+    return a.hexdigest()[:4]

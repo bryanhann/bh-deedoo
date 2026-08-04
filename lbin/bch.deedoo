@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 $BH1
 repo=$(dirname $(dirname $(0resolve ${BASH_SOURCE[0]})))
-$repo/prj/.venv/bin/bh-deedoo $*
+uv run --project $repo/prj $repo/prj/bch.deedoo $*
+#$repo/prj/.venv/bin/bh-deedoo $*
+
