@@ -22,5 +22,4 @@ TEMP.is_dir() or TEMP.mkdir()
 FOR=dict( stoppersGen() )
 REV=dict( (v,k) for (k,v) in stoppersGen() )
 
-STOP = '01e0'
 

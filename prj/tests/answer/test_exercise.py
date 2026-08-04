@@ -2,9 +2,10 @@
 
 from freezegun import freeze_time
 
-from constants import STOP
-from reverse import _answer
-from answering import clear, list, stat4stop
+from answer import _answer
+from files     import clear, list, stat4stop
+from stop      import stop4hhmm
+STOP=stop4hhmm('1700')
 
 @freeze_time("1970-12-25 17:04:49")
 def test_path4stop():

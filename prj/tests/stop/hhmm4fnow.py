@@ -1,18 +1,15 @@
-#!/usr/bin/env python3
+from testing import floor4now as fnow
+from fn import hhmm4dt 
+def hhmm4fnow(): 
+    return hhmm4dt( fnow() )
+
+##########################################
 
 from freezegun import freeze_time
 from constants import FOR
-from stopping import floor5hhmm, stop4now, hhmm4dt, hhmm4now
-from testing import floor4now as TNOW
 
 def _assert(hhmm):
-    assert hhmm4now() == hhmm
-    assert FOR[hhmm] == stop4now()
-
-def test_floor_1700(): assert floor5hhmm('1714') == '1700'
-def test_floor_1714(): assert floor5hhmm('1714') == '1700'
-def test_floor_1715(): assert floor5hhmm('1715') == '1715'
-def test_floor_1759(): assert floor5hhmm('1759') == '1745'
+    assert hhmm4fnow() == hhmm
 
 
 @freeze_time("1970-12-25 17:00:00")

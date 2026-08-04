@@ -6,7 +6,7 @@ import pathlib
 sys.path.append( f"{pathlib.Path(__file__).parent}/tests" )
 
 
-from ui import *
+from main import *
 
 if __name__ == "__main__":
     fire.Fire()
