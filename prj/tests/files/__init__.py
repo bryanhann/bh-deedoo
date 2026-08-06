@@ -23,10 +23,12 @@ def stat4stop(stop):
 
 
 def clear(): 
-    """Clear the stop cache
+    """Clear all stored stops.
+
+    Typically called before starting a server.
     """
     [x.unlink() for x in TEMP.glob('*')]
 
 def list():
-    """list the stop cache
+    """list all stored stop
     """
