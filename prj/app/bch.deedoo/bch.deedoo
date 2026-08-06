@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+from DEBUG import *
+
+import fire
+
+#==============================================
+# XXX This script assumes that when executed
+# the python interpreter will prepend sys.path
+# with the directory containing this sript.
+#==============================================
+
+from answer.ui import answer
+from server import serve
+from labels import label
+from files import clear
+from files import list
+
+if __name__ == "__main__":
+    fire.Fire()
+

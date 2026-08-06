@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+#exit()
 from stop import FOR    
 
 def label(*args):
