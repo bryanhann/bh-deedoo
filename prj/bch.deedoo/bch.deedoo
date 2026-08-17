@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+$BH1
+this=$(0resolve ${BASH_SOURCE[0]})
+prj=$(dirname $(dirname $this))
+uv run --project $prj $(dirname $this)/app/$(basename $this) $*
+
